@@ -1,0 +1,62 @@
+---
+title: "courseraPack"
+author: "Kevin Baktiar"
+date: "2/2/2018"
+output: html_document
+vignette: >
+  %\VignetteIndexEntry{courseraPack}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###### A package created for Coursera, using data from the US National Highway Traffic Safety Administration.
+###### The data used is specific to the Fatality Analysis Reporting System. The purpose of this package is to
+###### demonstrate reading in the data, what years to input, summarize the data and map out the data by state.
+
+#### Installation
+
+```{r echo= TRUE, results='hide'}
+library(courseraPack)
+```
+```{r include=FALSE}
+library(dplyr)
+```
+
+#### Reading in data
+
+```{r echo=TRUE}
+fars_read("accident_2013.csv.bz2")
+```
+
+#### Reads in data from a single or multiple years
+
+```{r echo=TRUE}
+years <- c(2013, 2014)
+data.list <- fars_read_years(years)
+data.list
+```
+
+#### Creates filename based on the year
+
+```{r echo=TRUE}
+file <- make_filename(2014)
+file
+```
+
+#### Creates a summary of each year passed
+
+```{r echo=TRUE}
+years.list <- c(2013, 2014)
+fars_summarize_years(years.list)
+```
+
+
+#### Creates graph of accidents by state
+
+```{r echo=TRUE}
+fars_map_state(1, 2013)
+```
