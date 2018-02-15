@@ -13,8 +13,10 @@
 #' @importFrom ("tidyr", "spread")
 #'
 #' @examples
+#' \dontrun{
 #' years <- c(2013, 2014)
 #' fars_summarize_years(years)
+#' }
 
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)

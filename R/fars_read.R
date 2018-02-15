@@ -14,7 +14,9 @@
 #' @importFrom ("dplyr", "tbl_df")
 #'
 #' @examples
-#' fars_read(user/data/accident_2013.csv)
+#' \dontrun{
+#' fars_read('courseraPack/accident_2013.csv.brz')
+#' }
 
 fars_read <- function(filename) {
   if(!file.exists(filename))

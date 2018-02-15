@@ -1,8 +1,4 @@
 exportPattern("^[[:alpha:]]+")
 
-import("dplyr")
-importFrom("magrittr", "%>%")
-importFrom("readr", "read_csv")
-importFrom("tidyr", "spread")
-importFrom("maps", "map")
+
 importFrom("graphics", "points")

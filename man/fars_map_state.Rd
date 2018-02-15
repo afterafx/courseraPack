@@ -25,5 +25,5 @@ If you pass a state number that doesn't exist, then a "invalid STATE number" err
 will be thrown.
 }
 \examples{
-fars_map_state(1, 2014)
+\dontrun{fars_map_state(1, 2014)}
 }

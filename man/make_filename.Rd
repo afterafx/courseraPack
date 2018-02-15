@@ -19,5 +19,7 @@ with the name of the data set that is wanted in use.
  the file, file doesn't exist error will be given.
 
 @examples
+/dontrun{
  make_filename(2013)
+ }
 }

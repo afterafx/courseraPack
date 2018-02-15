@@ -11,9 +11,11 @@
 #'  the file, file doesn't exist error will be given.
 #'
 #'  @examples
+#'  \dontrun{
 #'  make_filename(2013)
+#'  }
 
 make_filename <- function(year) {
   year <- as.integer(year)
-  sprintf("accident_%d.csv.bz2", year)
+  sprintf("accident_%d", year)
 }

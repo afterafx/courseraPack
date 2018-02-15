@@ -21,5 +21,5 @@ If the data you are trying to pass doesn't exist in that location or is
 incorrectly spell, function will return an error.
 }
 \examples{
-fars_read(user/data/accident_2013.csv)
+\dontrun{fars_read(user/data/accident_2013.csv)}
 }

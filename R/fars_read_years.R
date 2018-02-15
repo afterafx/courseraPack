@@ -13,8 +13,10 @@
 #' @importFrom ("dplyr", "mutate", "select")
 #'
 #' @examples
+#' \dontrun{
 #' years <- c(2013, 2014, 2015)
 #' fars_read_years(years)
+#' }
 
 fars_read_years <- function(years) {
   lapply(years, function(year) {

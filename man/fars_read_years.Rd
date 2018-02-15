@@ -21,6 +21,8 @@ and creates filenames for each year in the vector
 An error will be thrown if a filename with a specific year does not exist.
 }
 \examples{
+\dontrun{
 years <- c(2013, 2014, 2015)
 fars_read_years(years)
+}
 }
