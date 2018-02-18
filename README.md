@@ -9,6 +9,7 @@ vignette: >
   \usepackage[utf8]{inputenc}
 ---
 
+#### Travis Badge
 
 [![Build Status](https://travis-ci.org/afterafx/theCourtyard.svg?branch=master)](https://travis-ci.org/afterafx/theCourtyard)
 
