@@ -10,6 +10,8 @@ vignette: >
 ---
 
 
+[![Build Status](https://travis-ci.org/afterafx/theCourtyard.svg?branch=master)](https://travis-ci.org/afterafx/theCourtyard)
+
 
 ###### A package created for Coursera, using data from the US National Highway Traffic Safety Administration.
 ###### The data used is specific to the Fatality Analysis Reporting System. The purpose of this package is to
